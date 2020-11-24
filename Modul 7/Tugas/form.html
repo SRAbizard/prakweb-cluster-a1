@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Data Mahasiswa</title>
+    </head>
+    <body>
+        <h3>
+            DATA MAHASISWA PENS
+            <hr>
+            <hr>
+            TAMBAH DATA
+        </h3>
+        <form action="tambahdata.php" method="post">
+            <b>
+                NRP : <input type="text" name="nrp" size="35" maxlength="50"> <br>
+                Nama : <input type="text" name="nama" size="35" maxlength="50"> <br>
+                Alamat : <textarea type="text" name="alamat"></textarea> <br>
+                Jurusan : 
+                <select name="jurusan">
+                    <option value=1411>Teknik Informatika</option>
+                    <option value=1311>Teknik Elektro</option>
+                    <option value=1611>Teknik Geofisika</option>
+                    <option value=2111>Teknik Geomatika</option>
+                </select> <br> <br>
+            </b>
+            <input type="submit" value="Tambah">
+            <input type="reset" value="Reset">
+        </form>
+        <h3>
+            <hr>
+            <hr>
+            SEARCH DATA
+        </h3>
+        <form action="searchdata.php" method="post">
+            <b>
+                Nama :
+                <input type="text" type="text" name="cari">
+                <input type="submit" value="Cari Data">
+            </b>
+        </form>
+        <h3>
+            <hr>
+            <hr>
+            DELETE DATA
+        </h3>
+        <form action="deletedata.php" method="post">
+            <b>
+                NRP :
+                <input type="text" type="text" name="hapus">
+                <input type="submit" value="Hapus Data">
+            </b>
+        </form>
+    </body>
+</html>
