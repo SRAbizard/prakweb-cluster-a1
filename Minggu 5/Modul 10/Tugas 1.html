@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            border: 2px solid;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form class="border">
+            <label for="fname">Input Form:</label><br><br>
+            <input type="text" id="input">
+            <button OnClick="myfunction()">tambah</button>
+        </form>
+     
+        <div id="text"></div>
+        
+        <script>
+            var things = ["Buku","Pulpen","Jangka"];  
+            function myfunction() {
+                var tambah = document.getElementById("input").value;
+                document.getElementById("text").innerHTML= tambah;
+            }
+            benda.forEach(function(thing) {
+                document.write("- " +  thing + "[")
+            })
+        </script>
+    </div>
+</body>
+</html>

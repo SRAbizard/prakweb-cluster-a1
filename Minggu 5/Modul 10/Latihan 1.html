@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world javascript</title>
+</head>
+<body>
+    <p>Select a new car</p>
+    <select id="mySelect" OnChange="myfunction()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+    <p>When a new car,function triggered to value ur choice</p>
+    <p id="demo"></p>
+    <script >
+        function myfunction(){
+            var x = document.getElementById("mySelect").value;
+            document.getElementById("demo").innerHTML = "You Selected: "+ x ;
+        }
+   </script>
+</body>
+</html>
